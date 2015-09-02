@@ -1,0 +1,173 @@
+* {
+	padding:0;
+	//margin:0;
+	border-spacing: 0;
+}
+
+button {
+	padding:2px;
+}
+
+body {
+	background-color: #202020;
+	color: white;
+}
+
+table{
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+td{
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+.text{
+	vertical-align: middle;
+	font-family: monospace;
+}
+
+.textPad{
+	padding-left:16px;
+}
+
+.textVS{
+	width:50;
+	text-align: center;
+}
+
+.championIcon50{
+	/*background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Aatrox.png);*/
+	background-size: 50px 50px;
+	width:50;
+	height:50;
+}
+
+
+.championIcon-1{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Annie.png);}
+.championIcon-2{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Olaf.png);}
+.championIcon-3{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Galio.png);}
+.championIcon-4{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/TwistedFate.png);}
+.championIcon-5{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/XinZhao.png);}
+.championIcon-6{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Urgot.png);}
+.championIcon-7{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Leblanc.png);}
+.championIcon-8{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Vladimir.png);}
+.championIcon-9{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/FiddleSticks.png);}
+.championIcon-10{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Kayle.png);}
+.championIcon-11{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/MasterYi.png);}
+.championIcon-12{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Alistar.png);}
+.championIcon-13{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ryze.png);}
+.championIcon-14{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Sion.png);}
+.championIcon-15{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Sivir.png);}
+.championIcon-16{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Soraka.png);}
+.championIcon-17{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Teemo.png);}
+.championIcon-18{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Tristana.png);}
+.championIcon-19{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Warwick.png);}
+.championIcon-20{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nunu.png);}
+.championIcon-21{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/MissFortune.png);}
+.championIcon-22{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ashe.png);}
+.championIcon-23{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Tryndamere.png);}
+.championIcon-24{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Jax.png);}
+.championIcon-25{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Morgana.png);}
+.championIcon-26{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Zilean.png);}
+.championIcon-27{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Singed.png);}
+.championIcon-28{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Evelynn.png);}
+.championIcon-29{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Twitch.png);}
+.championIcon-30{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Karthus.png);}
+.championIcon-31{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Chogath.png);}
+.championIcon-32{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Amumu.png);}
+.championIcon-33{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Rammus.png);}
+.championIcon-34{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Anivia.png);}
+.championIcon-35{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Shaco.png);}
+.championIcon-36{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/DrMundo.png);}
+.championIcon-37{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Sona.png);}
+.championIcon-38{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Kassadin.png);}
+.championIcon-39{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Irelia.png);}
+.championIcon-40{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Janna.png);}
+.championIcon-41{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Gangplank.png);}
+.championIcon-42{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Corki.png);}
+.championIcon-43{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Karma.png);}
+.championIcon-44{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Taric.png);}
+.championIcon-45{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Veigar.png);}
+.championIcon-48{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Trundle.png);}
+.championIcon-50{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Swain.png);}
+.championIcon-51{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Caitlyn.png);}
+.championIcon-53{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Blitzcrank.png);}
+.championIcon-54{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Malphite.png);}
+.championIcon-55{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Katarina.png);}
+.championIcon-56{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nocturne.png);}
+.championIcon-57{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Maokai.png);}
+.championIcon-58{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Renekton.png);}
+.championIcon-59{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/JarvanIV.png);}
+.championIcon-60{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Elise.png);}
+.championIcon-61{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Orianna.png);}
+.championIcon-62{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/MonkeyKing.png);}
+.championIcon-63{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Brand.png);}
+.championIcon-64{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/LeeSin.png);}
+.championIcon-67{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Vayne.png);}
+.championIcon-68{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Rumble.png);}
+.championIcon-69{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Cassiopeia.png);}
+.championIcon-72{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Skarner.png);}
+.championIcon-74{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Heimerdinger.png);}
+.championIcon-75{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nasus.png);}
+.championIcon-76{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nidalee.png);}
+.championIcon-77{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Udyr.png);}
+.championIcon-78{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Poppy.png);}
+.championIcon-79{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Gragas.png);}
+.championIcon-80{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Pantheon.png);}
+.championIcon-81{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ezreal.png);}
+.championIcon-82{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Mordekaiser.png);}
+.championIcon-83{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Yorick.png);}
+.championIcon-84{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Akali.png);}
+.championIcon-85{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Kennen.png);}
+.championIcon-86{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Garen.png);}
+.championIcon-89{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Leona.png);}
+.championIcon-90{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Malzahar.png);}
+.championIcon-91{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Talon.png);}
+.championIcon-92{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Riven.png);}
+.championIcon-96{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/KogMaw.png);}
+.championIcon-98{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Shen.png);}
+.championIcon-99{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Lux.png);}
+.championIcon-101{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Xerath.png);}
+.championIcon-102{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Shyvana.png);}
+.championIcon-103{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ahri.png);}
+.championIcon-104{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Graves.png);}
+.championIcon-105{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Fizz.png);}
+.championIcon-106{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Volibear.png);}
+.championIcon-107{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Rengar.png);}
+.championIcon-110{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Varus.png);}
+.championIcon-111{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nautilus.png);}
+.championIcon-112{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Viktor.png);}
+.championIcon-113{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Sejuani.png);}
+.championIcon-114{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Fiora.png);}
+.championIcon-115{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ziggs.png);}
+.championIcon-117{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Lulu.png);}
+.championIcon-119{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Draven.png);}
+.championIcon-120{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Hecarim.png);}
+.championIcon-121{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Khazix.png);}
+.championIcon-122{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Darius.png);}
+.championIcon-126{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Jayce.png);}
+.championIcon-127{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Lissandra.png);}
+.championIcon-131{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Diana.png);}
+.championIcon-133{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Quinn.png);}
+.championIcon-134{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Syndra.png);}
+.championIcon-143{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Zyra.png);}
+.championIcon-150{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Gnar.png);}
+.championIcon-154{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Zac.png);}
+.championIcon-157{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Yasuo.png);}
+.championIcon-161{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Velkoz.png);}
+.championIcon-201{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Braum.png);}
+.championIcon-222{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Jinx.png);}
+.championIcon-223{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/TahmKench.png);}
+.championIcon-236{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Lucian.png);}
+.championIcon-238{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Zed.png);}
+.championIcon-245{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ekko.png);}
+.championIcon-254{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Vi.png);}
+.championIcon-266{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Aatrox.png);}
+.championIcon-267{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Nami.png);}
+.championIcon-268{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Azir.png);}
+.championIcon-412{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Thresh.png);}
+.championIcon-421{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/RekSai.png);}
+.championIcon-429{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Kalista.png);}
+.championIcon-432{background-image:url(http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Bard.png);}

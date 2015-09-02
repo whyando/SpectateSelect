@@ -1,0 +1,71 @@
+<html>
+<head>
+	<link href="icon.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+	
+	var queueArray = {4:'RANKED_SOLO_5x5',2:'NORMAL_5x5_BLIND',14:'NORMAL_5x5_DRAFT',42:'RANKED_TEAM_5x5',61:'GROUP_FINDER_5x5',65:'ARAM_5x5'};
+	var games;
+
+	function getQueueName(queueId){
+		if (queueArray[queueId]!=undefined)
+			return queueArray[queueId];
+		else
+			return "queue no." + queueId;
+	}
+
+	function query(){
+		$.get('query', function(data) {
+			games = JSON.parse(data);
+		    console.log(games);
+		    var s='<table>';
+		    for(var i=0;i<games.length;i++){
+		    	s+='<tr>';
+		    	
+		    	var width=0;
+		    	for(var j=0;j<games[i].participants.length;j++){
+		    		var player;
+		    		if(games[i].roleArranged)
+		    			player = games[i].participants[games[i].roleResult[j]];
+		    		else
+		    			player = games[i].participants[j];
+
+		    		if(games[i].participants[j].teamId==200 && games[i].participants[j-1].teamId==100){
+		    			s+='<td><div class = "text textVS">VS</td>';
+		    			width++;
+		    		}
+		    		s+='<td><div id=icon'+i+'_'+j+' class="championIcon50 championIcon-' + player.championId + '"></div></td>';
+		    		width++;
+		    	}
+		    	for(;width<11;width++)
+		    		s+='<td></td>';
+
+		    	if(games[i].gameQueueConfigId!=undefined)
+		    		s+='<td><div class = "text textPad">' /*+ games[i].gameMode + ' ' + games[i].gameType + ' '*/ + getQueueName(games[i].gameQueueConfigId) + '</div></td>';
+		    	else
+		    		s+='<td><div class = "text textPad">' /*+ games[i].gameMode + ' '*/ + games[i].gameType + '</div></td>';
+
+		    	s+='<td><div class = "text textPad">'+ (games[i].allRanked==true ? games[i].avgElo : "")+'</div></td>';
+		    	
+		    	var secondsLong = games[i].gameStartTime==0 ? 0 : Math.floor( (new Date().getTime()-games[i].gameStartTime) /1000);
+
+		    	s+='<td><div class = "text textPad">'+Math.floor(secondsLong/60)+ ':' + ('0'+(secondsLong%60)).slice(-2)+ '</div></td>';
+		    	s+='<td><div class = "text textPad"><button>Spectate</button></div></td>';
+		    	s+='</tr>';
+		    }
+		    s+='</table>';
+		    $('#main_div').html(s);
+		});
+	}
+
+	query();
+
+	
+	</script>
+</head>
+<body>
+
+	<div id='main_div'></div>
+
+</body>
+</html>

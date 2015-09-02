@@ -4,6 +4,11 @@ var api_key = fs.readFileSync('api_key.txt', 'utf8');
 
 var playerList;
 
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
+
+
+// Use connect method to connect to the Server
 
 https.get('https://euw.api.pvp.net/api/lol/euw/v2.5/league/challenger?type=RANKED_SOLO_5x5&api_key='+api_key, function(res) {
     var body="";
@@ -40,7 +45,25 @@ function check(i){
 
     lastReq = new Date().getTime();
     https.get('https://euw.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/EUW1/'+playerList.entries[i].playerOrTeamId+'?api_key='+api_key, function(res) { 
-        //console.log(res.statusCode);      
+        //console.log(res.statusCode);
+        var body="";
+        res.on('data', function (chunk) {
+            body+=chunk;
+        });
+        res.on('end', function (){            
+            if(res.statusCode==200){
+                var obj = JSON.parse(body);
+                obj.gameStartTime = new Date(obj.gameStartTime);
+
+                MongoClient.connect('mongodb://localhost:27017/ss', function(err, db) {
+                    var collection = db.collection("games");
+                    collection.updateOne({'gameId':obj.gameId},obj, {upsert:true},function(err, result) {
+                        assert.equal(null, err);
+                        db.close();
+                    });
+                });
+            }
+        });      
         switch(res.statusCode){
             case 404:
                 responses++;
